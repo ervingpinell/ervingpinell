@@ -6,21 +6,15 @@
 
 # Hola, soy Erving
 
-Desarrollador por profesión, gamer por decisión.
+Recepcionista por obligación, desarrollador por profesión, gamer por decisión.
 
-Trabajo desde Costa Rica, sobre todo con **Laravel, PHP y PostgreSQL**.
+Trabajo desde Costa Rica, sobre todo con **Laravel, JavaScript, PHP y PostgreSQL**.
 
 Antes de programar fui recepcionista en turismo, atendiendo huéspedes en español
-e inglés todos los días. De ahí vengo, y por eso el software que hago se parece
-tanto al mostrador: reservas, cobros, facturas y gente esperando una respuesta.
+e inglés todos los días.
 
-No tengo el título colgado en la pared —terminé la carrera pero me quedó
-pendiente el trabajo comunal—, así que lo que sé lo aprendí construyendo cosas
-que alguien tenía que usar al día siguiente. Sigo en eso: leyendo documentación,
-rompiendo cosas en local y apoyándome en la IA cuando conviene, pero sin
-delegarle el entender lo que estoy escribiendo.
 
----
+Mis proyectos:
 
 ## PURAPP
 
@@ -30,7 +24,7 @@ delegarle el entender lo que estoy escribiendo.
 
 ERP y motor de reservas para operadores turísticos en Costa Rica. No es un sitio
 de reservas con un panel detrás: cubre la operación completa de una empresa de
-tours —desde que el cliente entra a la web hasta que Hacienda acepta la factura—
+tours, desde que el cliente entra a la web hasta que Hacienda acepta la factura,
 en una plataforma multiempresa donde cada cliente corre con su propio despliegue
 y su propia base de datos.
 
@@ -60,10 +54,10 @@ mismo panel que las de la web.
 | **Punto de venta** | Mesas, comandas, modificadores, cocina, apertura y cierre de caja. Régimen simplificado o tradicional, con su propia configuración de impuestos. |
 | **Contabilidad** | Una sola fuente de verdad para ingresos y gastos. Importación de facturas de proveedor desde el XML, cuentas por cobrar y por pagar, y archivo de pagos para el banco. |
 | **Inventario y compras** | Catálogo, recetas e ingredientes, movimientos de existencias, órdenes de compra y desperdicio. |
-| **Recursos humanos** | Planilla con cargas sociales de Costa Rica, vacantes, candidatos, entrevistas, ausencias y liquidaciones. |
+| **Recursos humanos** | Planilla con cargas sociales de Costa Rica, vacantes, candidatos, entrevistas, ausencias y liquidaciones. (proximamente integración con ZETKO |
 | **Mensajería** | Chat por reserva con el correo entrante y saliente hilado, plantillas en los cinco idiomas y traducción automática al crear. |
 | **Reseñas** | Sincronización con Google y Viator, moderación y solicitudes de reseña. |
-| **Sitio público** | Página de inicio por empresa, catálogo, posicionamiento en buscadores, mapa del sitio y la marca —nombre, logo, colores, redes— resuelta desde la base de datos y no escrita a mano en el código. |
+| **Sitio público** | Página de inicio por empresa, catálogo, posicionamiento en buscadores, mapa del sitio y la marca, nombre, logo, colores, redes, resuelta desde la base de datos y no escrita a mano en el código. |
 
 </details>
 
@@ -73,8 +67,7 @@ mismo panel que las de la web.
 <br>
 
 - **Multiempresa sin base compartida.** Cada cliente tiene su propia base de
-  datos. No es purismo: ahí viven datos fiscales y la llave con la que se firman
-  sus facturas. Se comparte el servidor, no los datos.
+  datos. Se puede compartir  el servidor, pero nunca la base de datos.
 - **La firma electrónica, escrita a mano.** XAdES-EPES en PHP, sin librería de
   por medio: si el XML sale mal firmado, Hacienda lo rechaza y no hay factura.
   Se valida contra los esquemas oficiales antes de enviarlo, con un detalle que
@@ -84,10 +77,6 @@ mismo panel que las de la web.
   cobro suelto o por el punto de venta, y los tres pueden referirse al mismo
   dinero. Todo pasa por un único servicio que descuenta lo ya contado en otro
   lado; si no, el mismo monto aparece tres veces en el reporte del mes.
-- **Aplicación móvil que no inventa datos.** Con señal, el equipo reenvía la
-  operación al servidor en lugar de ejecutarla por su cuenta; sin señal, guarda
-  un pendiente y lo envía cuando vuelve la conexión. Pagos y documentos fiscales
-  nunca se resuelven sin conexión.
 - **Correo por la API de Microsoft Graph**, en cola con Horizon, y las
   respuestas del cliente vuelven al hilo de chat de su reserva.
 - **Cerca de 2.400 pruebas automatizadas** sobre reservas, precios, impuestos,
@@ -95,12 +84,8 @@ mismo panel que las de la web.
 
 </details>
 
-`Laravel 12` · `PHP 8.3` · `PostgreSQL` · `Redis / Horizon` · `Vue` · `Alpine.js`
-· `Bootstrap` · `NativePHP` · `Stripe` · `PayPal` · `Traccar` · `DigitalOcean` + `Forge`
-
-> Código privado, en desarrollo desde mayo de 2025. Para dar una idea del
-> tamaño: unas 185 mil líneas de PHP, 180 modelos, 660 migraciones y 130
-> comandos de consola.
+`Laravel 12` · `PHP 8.3` · `PostgreSQL` · `Redis / Horizon` · `Vue`
+· `Bootstrap` · `NativePHP` · `PayPal` · `Traccar` · `DigitalOcean` + `Forge`
 
 ---
 
@@ -112,8 +97,8 @@ Sitio para un servicio de masajes en La Fortuna. Bilingüe español/inglés y
 pensado para el celular: el cliente reserva desde el teléfono mientras está de
 viaje.
 
-HTML, CSS y JavaScript planos —sin compilación, sin framework, unas 1.200 líneas
-en total— servidos como archivos estáticos. El cambio de idioma es un atributo
+HTML, CSS y JavaScript planos, sin compilación, sin framework, unas 1.200 líneas
+en total, servidos como archivos estáticos. El cambio de idioma es un atributo
 por texto, y la reserva termina en WhatsApp con el mensaje ya redactado, que es
 donde el negocio realmente contesta.
 
