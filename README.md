@@ -13,13 +13,13 @@ Trabajo desde Costa Rica, sobre todo con **Laravel, JavaScript, PHP y PostgreSQL
 Antes de programar fui recepcionista en turismo, atendiendo huéspedes en español
 e inglés todos los días.
 
-
 Mis proyectos:
 
 ## PURAPP
 
-**[purappcr.com](https://purappcr.com)** — en producción:
-**[greenvacationscr.com](https://greenvacationscr.com)** ·
+**[purappcr.com](https://purappcr.com)**
+
+En producción: **[greenvacationscr.com](https://greenvacationscr.com)** ·
 **[lutantravelcr.com](https://lutantravelcr.com)**
 
 ERP y motor de reservas para operadores turísticos en Costa Rica. No es un sitio
@@ -54,10 +54,10 @@ mismo panel que las de la web.
 | **Punto de venta** | Mesas, comandas, modificadores, cocina, apertura y cierre de caja. Régimen simplificado o tradicional, con su propia configuración de impuestos. |
 | **Contabilidad** | Una sola fuente de verdad para ingresos y gastos. Importación de facturas de proveedor desde el XML, cuentas por cobrar y por pagar, y archivo de pagos para el banco. |
 | **Inventario y compras** | Catálogo, recetas e ingredientes, movimientos de existencias, órdenes de compra y desperdicio. |
-| **Recursos humanos** | Planilla con cargas sociales de Costa Rica, vacantes, candidatos, entrevistas, ausencias y liquidaciones. (proximamente integración con ZETKO |
+| **Recursos humanos** | Planilla con cargas sociales de Costa Rica, vacantes, candidatos, entrevistas, ausencias y liquidaciones. Próximamente, integración con ZETKO. |
 | **Mensajería** | Chat por reserva con el correo entrante y saliente hilado, plantillas en los cinco idiomas y traducción automática al crear. |
 | **Reseñas** | Sincronización con Google y Viator, moderación y solicitudes de reseña. |
-| **Sitio público** | Página de inicio por empresa, catálogo, posicionamiento en buscadores, mapa del sitio y la marca, nombre, logo, colores, redes, resuelta desde la base de datos y no escrita a mano en el código. |
+| **Sitio público** | Página de inicio por empresa, catálogo, posicionamiento en buscadores, mapa del sitio y la marca (nombre, logo, colores, redes) resuelta desde la base de datos y no escrita a mano en el código. |
 
 </details>
 
@@ -67,7 +67,7 @@ mismo panel que las de la web.
 <br>
 
 - **Multiempresa sin base compartida.** Cada cliente tiene su propia base de
-  datos. Se puede compartir  el servidor, pero nunca la base de datos.
+  datos. Se puede compartir el servidor, pero nunca la base de datos.
 - **La firma electrónica, escrita a mano.** XAdES-EPES en PHP, sin librería de
   por medio: si el XML sale mal firmado, Hacienda lo rechaza y no hay factura.
   Se valida contra los esquemas oficiales antes de enviarlo, con un detalle que
@@ -149,5 +149,5 @@ shower y no le dio tiempo de organizarlos.
 
 ## Contacto
 
-- **GitHub** — [@ervingpinell](https://github.com/ervingpinell)
-- **Correo** — erving@purappcr.com
+- **GitHub**: [@ervingpinell](https://github.com/ervingpinell)
+- **Correo**: erving@purappcr.com
